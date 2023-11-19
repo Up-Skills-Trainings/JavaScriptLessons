@@ -42,7 +42,7 @@ console.table(employees);
 const numbers = [45, 4, 9, 16, 25];
 let txt = "";
 
-function myScript(value, index, array) {
+function myScript(value, index, _array) {
   txt += `${index}nth element is ${value}\n`;
 }
 // myScript() is a callBack function for forEach in this example
@@ -90,3 +90,26 @@ let combinedArray = [...fruits, ...points, ...numbers, ...chars];
 txt = '';
 combinedArray.forEach(myScript);
 console.log(txt);
+
+/**
+ * How to create random values in JS
+ * Math.random() used this with Math.floor() both to create random integers in JS
+ * Math.random() creates decimal value between 0 and 1
+ */
+let number = Math.floor(Math.random() * 10); // between 0 and 10
+console.log(number);
+
+// create a number between 1 and 100
+number = Math.floor(Math.random() * 100) + 1;
+console.log(number);
+
+// create a fake userName : oscar+qa(number) number between 5 or 6 digit numbers
+
+// custom utilty function that creates a value between min and max values
+function getRndInteger(min,max) {
+  return Math.floor(Math.random() * max) + min;
+}
+
+console.log(getRndInteger(10,1000));
+
+// Dates in JS   getDate()
