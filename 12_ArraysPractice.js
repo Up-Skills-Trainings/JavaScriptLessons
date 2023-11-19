@@ -78,7 +78,7 @@ let positionOfApple = fruits2.indexOf('Apple'); // JS arrays are zero indexed ob
 console.log(positionOfApple); // 2 
 
 
-// split or str.charArray ... Array.form()
+// split or str.tocharArray ... Array.form()
 let chars = Array.from('ABCDEFGH'); // length property, iterable object
 console.log(chars);
 txt = "";
