@@ -29,3 +29,34 @@ let employees = [
 
 employees.sort(function(x,y){return x.salary - y.salary});
 console.table(employees);
+
+// JS Array Iteration
+/**
+ * forEach()
+ */
+
+const numbers = [45, 4, 9, 16, 25];
+let txt = "";
+
+function myScript(value, index, array) {
+    txt += `${index}nth element is ${value}\n`
+}
+// myScript() is a callBack function for forEach in this example
+numbers.forEach(myScript);
+console.log(txt);
+
+let sum = 0;
+let indexTxt = "";
+function addAll(oscar, burak) {
+    sum += oscar;
+    indexTxt += burak + " ";
+}
+numbers.forEach(addAll);
+console.log(`Total of numbers in my array is ${sum}`);
+console.log(indexTxt);
+
+// NOTE: when we create a callBack function to use for an Array, the first is variable poits to the VALUE, second one point to the index
+
+
+// map() function on Arrays usage 
+const numbers1 = [45, 4, 9, 16, 25];
